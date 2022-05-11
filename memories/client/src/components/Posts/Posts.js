@@ -1,4 +1,4 @@
-import { Card, Grid } from '@material-ui/core';
+import { Card, Grid,CircularProgress } from '@material-ui/core';
 import React from "react";
 import { useSelector } from 'react-redux';
 import Loading from '../Loading/Loading';
@@ -13,7 +13,7 @@ const Posts = ({ currentId, setCurrentId }) => {
   const classes = useStyles();
 
   return (
-    !posts.length ? null : (
+    !posts.length ? <CircularProgress />  : (
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>
         {
 
