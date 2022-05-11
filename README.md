@@ -7,3 +7,7 @@ The App is called "Memories" and it is a simple social media app that allows use
 
 # Setup
 run npm i && npm start for both client and server side to start the app.
+
+## Tech Stack
+
+ React, MongoDB, CSS and HTML.
